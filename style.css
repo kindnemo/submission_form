@@ -24,3 +24,14 @@
 #logo{
     height: 300px;
 }
+#form-section{
+    background-color: #1C7272;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#input-container{
+    background-color: rgba(217, 217, 217, 0.3);
+    height: 300px;
+    margin-bottom: 23px;
+}
