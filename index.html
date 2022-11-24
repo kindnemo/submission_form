@@ -25,7 +25,7 @@
 </head>
 <body>
     <div id="wrapper">
-        <!-- Hero Tag -->
+        <!-- HERO SECTION -->
         <section id="hero-section">
             <div class="container" id="hero-container">
                 <div class="logo-div">
@@ -34,8 +34,47 @@
             </div>
         </section>
 
+        <!-- FORM SECTION -->
         <section id="form-section">
-            <div class="container" id="form-container">`</div>
+            <div id="motto-div">
+                <p class="motto-para">This is your chance to get a free ride and explore what humanity never could discover since its beginning. The deep sea is full of wonders and mysteries we aren’t even aware of. </p>
+                <h1 class="motto-para">So join the <span>expedition</span> today!</h1>
+            </div>
+            <div class="container" id="form-container">
+                
+                <h2 id="form-heading">Join us now!</h2>
+                
+                <form action="" method="post">
+                    <div id="input-container">
+                        <!-- First Name -->
+                        <label for="first_name" class="form-labels">First Name</label>
+                        <input type="text" id="first_name" placeholder="eg. John" required>
+                        <!-- Last Name -->
+                        <label for="last_name" class="form-labels">Last Name</label>
+                        <input type="text" id="last_name" placeholder="eg. Doe" required>
+                        <!-- Email -->
+                        <label for="user_mail" class="form-labels">Email</label>
+                        <input type="email" id="user_mail" placeholder="eg. youremai@email.com" required>
+                        <!-- Phone Number -->
+                        <label for="phone_number" class="form-labels">Phone No.</label>
+                        <input type="tel" name="phone_number" id="phone_number" required placeholder="Enter Your Phone Number">
+                        <!-- Government ID -->
+                        <label for="gov_id" class="form-labels">Government Id</label>
+                        <input type="text" name="gov_id" id="gov_id">
+                        <!-- Username -->
+                        <label for="username" class="form-labels">Username</label>
+                        <input type="text" name="username" id="username" required placeholder="Eg. john_doe_100">
+                        <!-- Password -->
+                        <label for="password" class="form-labels">Password</label>
+                        <input type="password" name="password" id="password" required>
+                        <label for="cnfrm_password" class="form-labels">Confirm Password</label>
+                        <input type="password" name="cnfrm_password" id="cnfrm_password" required>
+                    </div>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <p id="log-in-para">Already have an accoubt? <a href="#" id="login-link">Log in.</a></p>
         </section>
     </div>
 </body>
