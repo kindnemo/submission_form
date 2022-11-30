@@ -3,6 +3,7 @@ body{
 }
 #wrapper{
     box-sizing: border-box;
+    box-sizing: border-box;
     display: flex;
     flex-direction: row;
 }
@@ -24,6 +25,13 @@ body{
     margin: 10px 10px;
     color: rgba(255,255,255,0.5);
 }
+#credit{
+    position: absolute;
+    bottom: 0;
+    text-decoration: none;
+    margin: 10px 10px;
+    color: rgba(255,255,255,0.5);
+}
 .logo-div{
     background-color: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(5px);
@@ -32,6 +40,7 @@ body{
     justify-content: center;
     align-items: center;
 }
+
 
 #logo{
     height: 300px;
@@ -59,6 +68,7 @@ body{
     margin: 10px;
     display: flex;
     flex-wrap: wrap;
+    justify-content:flex-start;
     gap: 30px;
 }
 .input-divs{
@@ -78,7 +88,7 @@ body{
     margin-top: 10px;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
     cursor: text;
-    width: 10rem;
+    /* width: 10vw; */
     transition: 0.1s;
     transition-timing-function:ease-in-out;
 }
@@ -89,11 +99,18 @@ body{
     color: black;
     opacity: 1;
     }
-#submit-btn, #log-in-para, #motto-div{
+#sub-log, #motto-div{
     position: absolute;
 }
-#submit-btn{
+#sub-log{
     margin: 80px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+}
+#submit-btn{
+    /* margin: 80px 20px; */
     padding: 10px 40px;
     border: none;
     border-radius: 6px;
@@ -114,7 +131,6 @@ body{
 }
 
 #log-in-para{
-    margin: 140px 25px;
     color: white;
     font-style: italic;
 }
@@ -154,3 +170,115 @@ a{
 a:hover{
     text-decoration: underline;
 }
+
+
+/* Media queries */
+
+@media(max-width: 1558px){
+    #input-container{
+        gap: 10px;
+    }
+
+    .type{
+        margin-top: 20px;
+        width: 10vw;
+    }
+
+    #sub-log{
+        margin: 80px 20px;
+    }
+}
+
+@media(max-width: 1320px){
+    #hero-container{
+        width: 30vw;
+    }
+
+    #input-container{
+        gap: 20px;
+    }
+    #sub-log{
+        margin: 60px 20px;
+    }
+}
+
+@media(max-width:1110px){
+    #wrapper{
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: stretch;
+        height: 100vh;
+    }
+
+    #hero-container{
+        width: 100vw;
+        height: max-content;
+    }
+    #hero-section{
+    }
+
+    .logo-div{
+        padding: 10px;
+        position: static;
+    }
+
+    #logo{
+        height: 100px;
+    }
+
+    #credit{
+        display: none;
+    }
+    #form-section{
+        flex-direction: column;
+        /* justify-content: center; */
+        height: 100%;
+    }
+    #form-container{
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+        margin-top: 75px;
+        background-color: #1C7272;
+    }
+    #motto-div{
+        display: none;
+    }
+    #sub-log{
+        position: static;
+    }
+    #form-container{
+        height:fit-content;
+        margin-top: 310px;
+    }
+    #input-container{
+        flex-direction: column;
+        gap: 0px;
+    }
+    .input-divs{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: stretch;
+    }
+    form{
+        display:grid;
+        flex-direction: row;
+        flex-wrap:nowrap;
+    }
+    .form-labels{
+        display: none;
+    }
+    .type{
+        width: 100%;
+        padding: 20px;
+    }
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: black;
+        font-size: larger;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        opacity: 1;
+        }
+}
+
