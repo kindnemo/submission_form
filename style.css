@@ -3,6 +3,7 @@ body{
 }
 #wrapper{
     box-sizing: border-box;
+    box-sizing: border-box;
     display: flex;
     flex-direction: row;
 }
@@ -24,6 +25,13 @@ body{
     margin: 10px 10px;
     color: rgba(255,255,255,0.5);
 }
+#credit{
+    position: absolute;
+    bottom: 0;
+    text-decoration: none;
+    margin: 10px 10px;
+    color: rgba(255,255,255,0.5);
+}
 .logo-div{
     background-color: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(5px);
@@ -32,6 +40,7 @@ body{
     justify-content: center;
     align-items: center;
 }
+
 
 #logo{
     height: 300px;
@@ -272,3 +281,4 @@ a:hover{
         opacity: 1;
         }
 }
+
