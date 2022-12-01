@@ -92,6 +92,7 @@ body{
     transition: 0.1s;
     transition-timing-function:ease-in-out;
     background-color: #D9D9D9;
+
 }
 .type:focus{
     outline: solid black;
@@ -277,6 +278,8 @@ a:hover{
     .type{
         width: 100%;
         padding: 20px;
+        font-family: 'Montserrat', sans-serif; 
+        font-size: 1rem;
     }
     ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
         color: black;
