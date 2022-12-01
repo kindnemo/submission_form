@@ -91,9 +91,16 @@ body{
     /* width: 10vw; */
     transition: 0.1s;
     transition-timing-function:ease-in-out;
+    background-color: #D9D9D9;
 }
 .type:focus{
     outline: solid black;
+}
+.type:focus:invalid{
+    outline: solid #c24236;
+}
+.type:focus:valid{
+    outline: solid #50a832;
 }
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: black;
@@ -213,8 +220,6 @@ a:hover{
     #hero-container{
         width: 100vw;
         height: max-content;
-    }
-    #hero-section{
     }
 
     .logo-div{
