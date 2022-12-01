@@ -24,7 +24,7 @@
     <!-- CSS -->
     
     <!-- SCRIPT -->
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <!-- SCRIPT -->
 
 </head>
@@ -55,22 +55,30 @@
                         <div class="input-divs">
                             <label for="first_name" class="form-labels"
                             >First Name</label>
-                            <input type="text" id="first_name" placeholder="Eg. John" required autofocus class="type">
+                            <input type="text" id="first_name" placeholder="Eg. John" required autofocus class="type"
+                            oninvalid="this.setCustomValidity('Enter your first name here')"
+                            oninput="this.setCustomValidity('')">
                         </div>
                         <!-- Last Name -->
                         <div class="input-divs">
                             <label for="last_name" class="form-labels">Last Name</label>
-                            <input type="text" id="last_name" placeholder="Eg. Doe" required class="type">
+                            <input type="text" id="last_name" placeholder="Eg. Doe" required class="type"
+                            oninvalid="this.setCustomValidity('Enter your last name here')"
+                            oninput="this.setCustomValidity('')">
                         </div>
                         <!-- Email -->
                         <div class="input-divs">
                             <label for="user_mail" class="form-labels">Email</label>
-                            <input type="email" id="user_mail" placeholder="Eg. youremai@email.com" required class="type">
+                            <input type="email" id="user_mail" placeholder="Eg. youremai@email.com" required class="type"
+                            oninvalid="this.setCustomValidity('Please enter a valid email you gunk')"
+                            oninput="this.setCustomValidity('')">
                         </div>
                         <!-- Phone Number -->
                         <div class="input-divs">
                             <label for="phone_number" class="form-labels">Telephone No.</label>
-                            <input type="tel" name="phone_number" id="phone_number" required placeholder="Enter Your Phone Number" class="type">
+                            <input type="tel" name="phone_number" id="phone_number" required placeholder="Enter Your Phone Number" class="type"
+                            oninvalid="this.setCustomValidity('Enter a valid phone number')"
+                            oninput="this.setCustomValidity('')">
                         </div>
                         <!-- Government ID -->
                         <div class="input-divs">
@@ -80,7 +88,9 @@
                         <!-- Username -->
                         <div class="input-divs">
                             <label for="username" class="form-labels">Username</label>
-                            <input type="text" name="username" id="username" required placeholder="Eg. john_doe_100" class="type">
+                            <input type="text" name="username" id="username" required placeholder="Eg. john_doe_100" class="type" 
+                            oninvalid="this.setCustomValidity('Enter a unique username')"
+                            oninput="this.setCustomValidity('')">
                         </div>
                         <!-- Password -->
                         <div class="input-divs">
@@ -96,11 +106,11 @@
                     </div>
 
                     
+                    <div id="sub-log">
+                        <button type="submit" id="submit-btn">SIGN UP</button>
+                        <p id="log-in-para">Already have an account? <a href="#" id="login-link">Log in.</a></p>
+                    </div>
                 </form>
-                <div id="sub-log">
-                    <button type="submit" id="submit-btn">SIGN UP</button>
-                    <p id="log-in-para">Already have an account? <a href="#" id="login-link">Log in.</a></p>
-                </div>
             </div>
         </section>
     </div>
