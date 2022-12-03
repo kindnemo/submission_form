@@ -8,7 +8,7 @@ body{
     flex-direction: row;
 }
 #hero-container{
-    background-image: url(/photos/pexels_tolga.jpg);
+    background-image: url(./photos/pexels_tolga.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size:cover;
